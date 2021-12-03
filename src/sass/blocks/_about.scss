@@ -15,13 +15,13 @@
     }
     &__descr {
         .divider {
-            margin-top: 0;
+            margin: 0;
         }
     }
     &__title {
         padding: 6px 0 0 8px;
         position: relative;
-        @include befor_square;
+        @include before_square;
     }
     &__text {
         margin-top: 20px;
@@ -48,7 +48,7 @@
         &-square {
             position: relative;
             padding: 13px 0 0 13px;
-            @include befor_square;
+            @include before_square;
         }
         &-text {
             margin-top: 6px;
