@@ -1,0 +1,15 @@
+.footer {
+    min-height: 115px;
+    background-color: #000;
+    font-size: 13px;
+    line-height: 110px;
+    color: #9C9C9C;
+    text-align: center;
+    a {
+        color: #9C9C9C;
+        text-decoration: none;
+        &:hover {
+            color: #fff; 
+        }
+    }
+}
