@@ -1,23 +1,16 @@
 .skills {
     padding-top: 80px;
-    &__title {
-        position: relative;
-        text-align: center;
-        @include before_circle;
-        &:before {
-            top: -6px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-    }
-    &__subtitle {
-        text-align: center;
-    }
     &__wrapper {
         margin: 70px auto 0 auto;
         width: 935px;
         display: flex;
         justify-content: space-between;
+    }
+    &__img {
+        transition: 0.6s all;
+        &:hover {
+            transform: scale(1.08);
+        }
     }
     &__ratings {
         margin-top: 120px;
