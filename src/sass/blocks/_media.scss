@@ -8,6 +8,18 @@
     .container {
         max-width: 960px;
     }
+    .about {
+        &__wrapper {
+            grid-template-columns: 400px 531px;
+            column-gap: 25px;
+        }
+        &__skills {
+            column-gap: 15px;
+            &-item {
+                grid-template-columns: 40px 197px;
+            }
+        }
+    }
 }
 
 @media (max-width: 991px) {
@@ -15,6 +27,10 @@
         max-width: 720px;
     }
     .title {
+        &_fz36 {
+            font-size: 25px;
+            line-height: 32px;
+        }
         &_fz64 {
             font-size: 54px;
             line-height: 67px;
@@ -23,6 +39,20 @@
     .promo {
         &__title {
             width: 720px;
+        }
+    }
+    .about {
+        &__wrapper {
+            grid-template-columns: 300px 380px;
+            column-gap: 35px;
+        }
+        &__skills {
+            grid-template-columns: 380px;
+            grid-auto-rows: minmax(115px,auto);
+            &-item {
+                grid-template-columns: 40px 320px;
+                column-gap: 20px;
+            }
         }
     }
 }
@@ -34,6 +64,18 @@
     .promo {
         &__title {
             width: 540px;
+        }
+    }
+    .about {
+        padding-top: 40px;
+        &__wrapper {
+            grid-template: 340px auto auto / 1fr;
+        }
+        &__skills {
+            grid-template-columns: repeat(2, 260px);
+            &-item {
+                grid-template-columns: 40px 200px;
+            }
         }
     }
 }
@@ -77,6 +119,14 @@
         &__btns {
             width: 270px;
             margin-top: 40px;
+        }
+    }
+    .about {
+        &__wraooer {
+            grid-template: 340px auto auto / 1fr; 
+        }
+        &__skills {
+            grid-template-columns: 1fr;
         }
     }
 }
