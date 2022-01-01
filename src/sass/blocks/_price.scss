@@ -6,6 +6,7 @@
         display: grid;
         grid-template: minmax(45px, auto) / repeat(2, 365px);
         grid-template-rows: minmax(45px, auto);
+        grid-auto-rows: minmax(45px, auto);
         row-gap: 15px;
         justify-content: space-between;
     }
