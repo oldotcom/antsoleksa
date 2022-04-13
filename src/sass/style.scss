@@ -22,6 +22,16 @@
     background-color: $second-color;
 }
 
+.ribbon {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 90px;
+    height: 90px;
+    background: url('../img/banners/stop-war-in-ukraine.png');
+    z-index: 2013;
+}
+
 @import 'blocks/promo';
 @import 'blocks/title';
 @import 'blocks/button';
