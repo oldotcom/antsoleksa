@@ -1,13 +1,16 @@
 .sidepanel {
     position: fixed;
-    top: 230px;
-    left: 50px;
+    top: 213px;
+    left: 60px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     height: 240px;
     z-index: 3;
+    &__link {
+        font-size: 23px;
+    }
     &__divider {
         width: 2px;
         height: 70px;
