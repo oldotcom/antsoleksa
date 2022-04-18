@@ -1,7 +1,7 @@
 .promo {
     position: relative;
     min-height: 100vh;
-    padding-top: 245px;
+    padding-top: 260px;
     background: url('../img/main_bg.jpg') no-repeat 50%/cover;
     &__title {
         width: 850px;
@@ -26,8 +26,8 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 283px;
-        margin-top: 85px;
+        width: 260px;
+        margin-top: 40px;
     }
     &__link {
         font-weight: 700;

@@ -1,6 +1,6 @@
 .sidepanel {
     position: fixed;
-    top: 213px;
+    top: 226px;
     left: 60px;
     display: flex;
     flex-direction: column;
@@ -10,6 +10,7 @@
     z-index: 3;
     &__link {
         font-size: 23px;
+        color: #FFFFFF;
     }
     &__divider {
         width: 2px;

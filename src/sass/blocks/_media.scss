@@ -75,6 +75,7 @@
         margin: 15px auto 0 auto;
     }
     .promo {
+        padding-top: 130px;
         &__title {
             width: 720px;
         }
@@ -223,6 +224,9 @@
     }
     .hamburger {
         right: 20px;
+    }
+    .pageup {
+        right: 10px;
     }
     .menu {
         &__block {

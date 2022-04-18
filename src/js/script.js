@@ -10,9 +10,16 @@ closeElem.addEventListener('click', () => {
     menu.classList.remove('active');
 });
 
+const counters = document.querySelectorAll('.skills__ratings-counter'),
+      lines = document.querySelectorAll('.skills__ratings-line span');
+
+counters.forEach( (item, i) => {
+    lines[i].style.width = item.innerHTML;
+});
+
 $(document).ready(function(){
     $(window).scroll(function(){  
-        if ($(window).scrollTop() > 700 ){
+        if ($(window).scrollTop() > 500 ){
             $(".sidepanel__link").css("color", "rgb(6, 35, 4)");
 			$(".sidepanel__divider").css("background-color", "rgb(6, 35, 4)");
 			$(".sidepanel__text").css("color", "rgb(6, 35, 4)");
@@ -22,11 +29,12 @@ $(document).ready(function(){
 			$(".sidepanel__text").css("color", "white");
 		} 
     });
+    
+    $(Window).scroll(function() {
+        if ($(this).scrollTop() > 400) {
+            $('.pageup').fadeIn();
+        } else {
+            $('.pageup').fadeOut();
+        }
+    });
 }); 
-
-const counters = document.querySelectorAll('.skills__ratings-counter'),
-      lines = document.querySelectorAll('.skills__ratings-line span');
-
-counters.forEach( (item, i) => {
-    lines[i].style.width = item.innerHTML;
-});
