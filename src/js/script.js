@@ -1,13 +1,25 @@
 const hamburger = document.querySelector('.hamburger'),
       menu = document.querySelector('.menu'),
+      menuBlock = document.querySelector('.menu__block'),
       closeElem = document.querySelector('.menu__close');
 
-hamburger.addEventListener('click', () => {
+hamburger.addEventListener('click', e => {
+    e.stopPropagation();
     menu.classList.add('active');
 });
 
 closeElem.addEventListener('click', () => {
     menu.classList.remove('active');
+});
+
+document.addEventListener('click', e => {
+    if (menu.classList.contains('active')) {
+        const withinBoundaries = e.composedPath().includes(menuBlock);
+
+        if (!withinBoundaries) {
+            menu.classList.remove('active');
+        }   
+    }
 });
 
 const counters = document.querySelectorAll('.skills__ratings-counter'),
