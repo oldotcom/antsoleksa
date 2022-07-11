@@ -22,6 +22,12 @@ document.addEventListener('click', e => {
     }
 });
 
+document.addEventListener('keydown', e => {
+    if (menu.classList.contains('active') && e.key === 'Escape') {
+        menu.classList.remove('active');
+    }
+});
+
 const counters = document.querySelectorAll('.skills__ratings-counter'),
       lines = document.querySelectorAll('.skills__ratings-line span');
 
