@@ -15,7 +15,6 @@ closeElem.addEventListener('click', () => {
 document.addEventListener('click', e => {
     if (menu.classList.contains('active')) {
         const withinBoundaries = e.composedPath().includes(menuBlock);
-        console.log(withinBoundaries);
         if (!withinBoundaries) {
             menu.classList.remove('active');
         }
