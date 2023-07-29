@@ -47,7 +47,7 @@ $(document).ready(function(){
 		} 
     });
     
-    $(Window).scroll(function() {
+    $(window).scroll(function() {
         if ($(this).scrollTop() > 400) {
             $('.pageup').fadeIn();
         } else {
